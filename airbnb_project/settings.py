@@ -37,7 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'airbnb.apps.AirbnbConfig',
+    'airbnb.apps.AirbnbConfig', #new
+    'movers.apps.MoversConfig',
 ]
 
 MIDDLEWARE = [
