@@ -1,0 +1,15 @@
+create a django project airbnb 
+Create an app airbnb
+Create a model with the name, location, price, avalabilty and services offered in the airbnb
+create a superuser where the details of the airbnb will be added from 
+create a the boooking option based on avalability of the airbnb
+
+create the views and urls for the pages 
+create the templates for the pages 
+
+pages needed = home, services, about, customer support
+
+repeat the same step for the movers app 
+
+
+

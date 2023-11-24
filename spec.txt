@@ -1,0 +1,2 @@
+A website that will show the details of airbnbs and there loactions,price and services offered also movers details, price and location available.
+ The website will enable the users to book a airbnb or a mover service or even ask questions about the services offered.
