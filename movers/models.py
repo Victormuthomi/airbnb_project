@@ -2,9 +2,14 @@ from django.db import models
 
 # Create your models here.
 
-class Services(models.Model):
+class Service(models.Model):
     """Define the different services offered"""
     name = models.CharField(max_length=50)
+     
+    def __str__(self):
+        """Show the service name"""
+        return self.name
+
 
 
 class Customer(models.Model):
@@ -24,8 +29,8 @@ class Booking(models.Model):
     booking_id = models.AutoField(primary_key=True)
     customer = models.ForeignKey(Customer, on_delete=models.CASCADE)
     date = models.DateTimeField(auto_now=True)
-    
+    service = models.ForeignKey(Service, on_delete = models.CASCADE, default = 1)
+
     def __str__(self):
         return  'Booking no ' + str(self.booking_id) + ' on ' + self.date.strftime('%d %B %Y %H:%M')
-
 

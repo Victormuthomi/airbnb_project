@@ -19,7 +19,7 @@ class Customer(models.Model):
      """Define the fields for the customers"""
      name = models.CharField(max_length=20)
      email = models.EmailField()
-     phone_number = models.PositiveSmallIntegerField()
+     phone_number = models.PositiveIntegerField()
 
      def __str__(self):
           """Print the name of the customer"""

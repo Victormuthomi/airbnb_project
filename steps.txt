@@ -11,5 +11,13 @@ pages needed = home, services, about, customer support
 
 repeat the same step for the movers app 
 
+models needed for the airbnb app
+1. airbnb
+2. customer
+3. Booking 
+
+models needed for movers
+customer
+boooking
 
 
