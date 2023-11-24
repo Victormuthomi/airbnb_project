@@ -12,6 +12,7 @@ class Airbnb(models.Model):
     services = models.TextField()
 
     def __str__(self):
+          """Print the name of the airbnb """
           return self.name
 
 class Customer(models.Model):
@@ -21,13 +22,23 @@ class Customer(models.Model):
      phone_number = models.PositiveSmallIntegerField()
 
      def __str__(self):
+          """Print the name of the customer"""
           return self.name
      
 class Booking(models.Model):
      """Define the booking fields"""
+     booking_id= models.AutoField(primary_key=True)
      customer = models.ForeignKey(Customer, on_delete=models.CASCADE)
-     date = models.TimeField(auto_now_add=True)
      airbnb = models.ForeignKey(Airbnb, on_delete=models.CASCADE, default=1)
+     date = models.DateTimeField(auto_now=True)
+     
+     
+     def __str__(self):
+        return  'Booking no ' + str(self.booking_id) + ' on ' + self.date.strftime('%d %B %Y %H:%M')
+
+
+    
+          
 
      
 
