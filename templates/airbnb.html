@@ -1,1 +1,27 @@
-<h1>Airbnb</h1>
+<!--templates/airbnb-->
+<html>
+    <head>
+        <title>Airbnbs</title>
+    </head>
+    <body>
+        <h1>Airbnbs</h1>
+        <h2>Enjoy this executive 3 bedroom fully furnished apartment (Airbnb)
+            <ul>
+                {% for  airbnb in all_airbnbs_list %}
+                <li>
+                    <h3>{{ airbnb.name }}</h3>
+                    <img src="house.jpeg" alt="The picture of the airbnb">
+                    <p>Location : {{ airbnb.location }} </p>
+                    <p>Rooms : {{ airbnb.rooms }}</p>
+                    <p>Price : {{airbnb.price }}</p>
+                    <p>Avalability: {% if airbnb.avalability %}Available{% else %}
+                        Not available {% endif %}
+                    </p>
+                    <p>Services: {{ airbnb.services }}</p>
+                </li>
+                {% endfor %}
+            </ul></h2>
+
+    </body>
+</html>
+

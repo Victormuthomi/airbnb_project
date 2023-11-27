@@ -5,6 +5,8 @@ from django.db import models
 class Service(models.Model):
     """Define the different services offered"""
     name = models.CharField(max_length=50)
+    
+    context_object_name ='all_services_list'
      
     def __str__(self):
         """Show the service name"""

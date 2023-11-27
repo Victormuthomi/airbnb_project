@@ -15,6 +15,7 @@ class AirbnbListView(ListView):
     """Define the model and the template to use for the airbnbs"""
     model = Airbnb
     template_name = 'airbnb.html'
+    context_object_name = 'all_airbnbs_list'
 
 class BookingListView(ListView):
     """Define the model and temlate to use for the bookings"""

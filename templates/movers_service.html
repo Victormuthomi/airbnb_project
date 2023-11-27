@@ -1,1 +1,7 @@
 <h1>Movers Service</h1>
+
+<ul>
+    {% for service in all_services_list %}
+      <li>{{ service.name }}</li>
+    {% endfor %}
+</ul>

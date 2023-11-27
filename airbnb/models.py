@@ -10,6 +10,7 @@ class Airbnb(models.Model):
     price = models.DecimalField(max_digits=6, decimal_places=2)
     avalability = models.BooleanField(default=True)
     services = models.TextField()
+    image = models.ImageField(upload_to='images/', default=1)
 
     def __str__(self):
           """Print the name of the airbnb """
