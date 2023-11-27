@@ -126,3 +126,16 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# settings.p
+from django.conf import settings
+
+# ...
+
+# Absolute filesystem path to the directory that will hold user-uploaded files.
+# Example: "/var/www/example.com/media/"
+MEDIA_ROOT = os.path.join(settings.BASE_DIR, 'media')
+
+# URL that handles the media served from MEDIA_ROOT. Use a trailing slash.
+# Examples: "http://example.com/media/", "http://media.example.com/"
+MEDIA_URL = '/media/'

@@ -10,10 +10,12 @@
                 {% for  airbnb in all_airbnbs_list %}
                 <li>
                     <h3>{{ airbnb.name }}</h3>
-                    <img src="house.jpeg" alt="The picture of the airbnb">
+                    {% for image in airbnb.images.all %}
+                      <img src="{{ image.image.url }}" alt="{{ airbnb.name }}">
+                    {% endfor %}
                     <p>Location : {{ airbnb.location }} </p>
                     <p>Rooms : {{ airbnb.rooms }}</p>
-                    <p>Price : {{airbnb.price }}</p>
+                    <p>Price : Ksh. {{airbnb.price }}</p>
                     <p>Avalability: {% if airbnb.avalability %}Available{% else %}
                         Not available {% endif %}
                     </p>

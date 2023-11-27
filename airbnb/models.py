@@ -10,11 +10,20 @@ class Airbnb(models.Model):
     price = models.DecimalField(max_digits=6, decimal_places=2)
     avalability = models.BooleanField(default=True)
     services = models.TextField()
-    image = models.ImageField(upload_to='images/', default=1)
+    
 
     def __str__(self):
           """Print the name of the airbnb """
           return self.name
+
+class Airbnbimage(models.Model):
+     """Define the fields for the images"""
+     airbnb = models.ForeignKey(Airbnb, related_name='images', on_delete= models.CASCADE)
+     image = models.ImageField(upload_to='images/', default='default.jpeg')
+
+     def __str__(self):
+          """Print the name of the airbnb image is being uplooded for"""
+          return str(self.airbnb) + ' ' + 'images'
 
 class Customer(models.Model):
      """Define the fields for the customers"""
