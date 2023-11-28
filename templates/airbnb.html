@@ -20,9 +20,13 @@
                         Not available {% endif %}
                     </p>
                     <p>Services: {{ airbnb.services }}</p>
+                    <p>{% if airbnb.avalability %}<a href="{% url 'airbnb_customer_form' %}">Book now</a>{% else %}
+                        The airbnb is already booked.Please try another one{% endif %}
+                 
                 </li>
                 {% endfor %}
             </ul></h2>
+            
 
     </body>
 </html>

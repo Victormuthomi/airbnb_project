@@ -1,0 +1,8 @@
+<!--templates/airbnb_customer_form.html-->
+<h1>Customer Registration form</h1>
+<p>Input your details below</p>
+<form method="POST">
+    {% csrf_token %}
+    {{ form.as_p}}
+    <input type="submit" value="Book now">
+</form>
