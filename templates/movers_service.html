@@ -1,7 +1,11 @@
-<h1>Movers Service</h1>
-
+<h1>Movers Services</h1>
+    <p>Talk to us today and get a quotation for FREE at 0758407285
+      or book a service below</p>
 <ul>
     {% for service in all_services_list %}
       <li>{{ service.name }}</li>
+      <p>Services available across this regions:</p>
+      <li>{{ service.available_areas }}</li>
+      <p><a href = "{% url 'movers_customer_form' %}">Book now</a></p>
     {% endfor %}
 </ul>

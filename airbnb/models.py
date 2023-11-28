@@ -37,7 +37,7 @@ class Customer(models.Model):
 
      def __str__(self):
           """Print the name of the customer"""
-          return  str(self.booking_id) + ' user ' + self.name + ' booking airbnb ' + str(self.airbnb)
+          return  'booking number ' + str(self.booking_id) + ' user ' + self.name + ' booking airbnb ' + str(self.airbnb) + ' on ' + self.date.strftime('%d %B %Y %H:%M')
 
 
           
