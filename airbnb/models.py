@@ -30,7 +30,7 @@ class Customer(models.Model):
      """Define the fields for the customers"""
      name = models.CharField(max_length=20)
      email = models.EmailField()
-     phone_number = models.PositiveIntegerField()
+     phone_number = models.PositiveBigIntegerField()
      booking_id= models.AutoField(primary_key=True)
      airbnb = models.ForeignKey(Airbnb, on_delete=models.CASCADE)
      date = models.DateTimeField(auto_now=True)
