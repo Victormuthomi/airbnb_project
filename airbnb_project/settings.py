@@ -139,3 +139,6 @@ MEDIA_ROOT = os.path.join(settings.BASE_DIR, 'media')
 # URL that handles the media served from MEDIA_ROOT. Use a trailing slash.
 # Examples: "http://example.com/media/", "http://media.example.com/"
 MEDIA_URL = '/media/'
+
+#static files
+STATICFILES+DIRS=[os.path.join(BASE_DIR, 'static')]
