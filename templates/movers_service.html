@@ -1,3 +1,8 @@
+<!--templates/movers_service.html-->
+
+{% extends 'base.html' %}
+
+{% block content %}
 <h1>Movers Services</h1>
     <p>Talk to us today and get a quotation for FREE at 0758407285
       or book a service below</p>
@@ -9,3 +14,5 @@
       <p><a href = "{% url 'movers_customer_form' %}">Book now</a></p>
     {% endfor %}
 </ul>
+
+{% endblock content %}

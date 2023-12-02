@@ -1,0 +1,17 @@
+body{
+    font-family : 'Source Sans Pro', sans-serif;
+    color: rgb(0, 6, 8);
+    font-size : 18px;
+}
+
+header h1 a{
+    color : red;
+}
+
+h1 {
+    color : blue;
+}
+
+a {
+    color : magenta;
+}

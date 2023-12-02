@@ -1,16 +1,16 @@
 <!--templates/home.html-->
+{% extends 'base.html' %}
+{% load static %}
 
-<html>
-    <head>
-        <h1>Waves Homes and moves</h1>
-    </head>
-    <body>
+{% block content %}
+<h1>Airbnb</h1>
         <h2>Are you travelling to the lakeside city, Kisumu and in need of accomodation?
             the search is over. Enjoy this executive 3 bedroom fully furnished apartment
             (Airbnb) in Milimani Estate. Studio Apartments 1,2,3,4 to 5 bedroom units available.
         </h2>
         <h3>Check the airbnbs using the link below</h3>
         <a href="{% url 'airbnb' %}">Airbnbs</a>
+
     </body>
     <h1>Moving soon</h1>
     <h2>We offer quality Mover services for you. Our services include:</h2>
@@ -23,5 +23,8 @@
 <h4>Talk to us today and get a quotation for FREE</h4>
     <h4>Call: 0768305216 or book a a service using the link below</h4>
     <a href="{% url 'movers_service' %}">Movers booking</a>
+
 </body>
 </html>
+
+{% endblock content %}
