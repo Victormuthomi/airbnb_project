@@ -16,7 +16,7 @@ This project is a web application that lists Airbnb properties and moving servic
     ```
 2. Navigate to the project directory:
     ```
-    cd airbnb-project
+    cd airbnb_project
     ```
 3. Install the required dependencies:
     ```
