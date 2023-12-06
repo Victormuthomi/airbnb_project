@@ -2,10 +2,11 @@ body{
     font-family : 'Source Sans Pro', sans-serif;
     color: rgb(0, 6, 8);
     font-size : 18px;
+    background-color: aqua;
 }
 
 header h1 a{
-    color : red;
+    color : rgb(0, 255, 106);
 }
 
 h1 {
